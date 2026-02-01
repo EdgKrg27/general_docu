@@ -3,13 +3,13 @@
 ## Módulo 1: Fundamentos de programación (Python)
 ##### Duración 4 - 6 semanas
   
-[ ] Sintaxis básica de python  
-[ ] Tipos de datos y estrucuras (listas, sets, diccionarios, tuplas)  
-[ ] Funciones y módulos  
-[ ] Manejo de errores  
-[ ] Lectura y escritura de archivos  
-[ ] Introducción a pandas  
-[ ] Uso de entornos virtuales (venv, pip)  
+[ X ] Sintaxis básica de python  
+[ X ] Tipos de datos y estrucuras (listas, sets, diccionarios, tuplas)  
+[ X ] Funciones y módulos  
+[ X ] Manejo de errores  
+[ X ] Lectura y escritura de archivos  
+[  ] Introducción a pandas  
+[ X ] Uso de entornos virtuales (venv, pip)  
 
 ### Proyectos  
   
@@ -21,12 +21,12 @@
 ## Módulo 2: SQL Avanzado + Modelado de Datos
 ##### Duración 6 - 8 semanas
   
-[ ] SELECT, JOIN, GROUPBY  
-[ ] Subqueries y CETs  
-[ ] Windows functions (muy importantes)
-[ ] Optimización de consultas  
-[ ] Normalización (1NF, 2NF, 3NF)  
-[ ] Diseño estrella y copo de nieve (kimball)  
+[  ] SELECT, JOIN, GROUPBY  
+[  ] Subqueries y CETs  
+[  ] Windows functions (muy importantes)
+[  ] Optimización de consultas  
+[  ] Normalización (1NF, 2NF, 3NF)  
+[  ] Diseño estrella y copo de nieve (kimball)  
 
 ### Proyectos
 - [Sistema de ventas con modelos estrella + consultas avanzadas]()
@@ -37,9 +37,9 @@
 ## Módulo 3: Bases de datos SQL y NoSQL  
 ##### Duración 3 - 4 semanas  
   
-[ ] Bases relacionales PostgeSQL, MySQL  
-[ ] NoSQL MongoDB, Redis  
-[ ] Índices, particiones, replicación (conceptos), diferenteis entre OLTP vs OLAP  
+[  ] Bases relacionales PostgeSQL, MySQL  
+[  ] NoSQL MongoDB, Redis  
+[  ] Índices, particiones, replicación (conceptos), diferenteis entre OLTP vs OLAP  
   
 ### Proyectos  
 - [Sistema de gestión de inventario SQL - PostgreSQL]()
@@ -50,13 +50,13 @@
 ## Módulo 4: Procesamiento de datos: Spark, PySpark y Big Data 
 ##### Duración 8 - 10 semanas  
   
-[ ] ¿Qué es un cluster?  
-[ ] Spark: estructura y arquitectura  
-[ ] RDDs vs DataFrames  
-[ ] Jobs, stages, tasks  
-[ ] PySpark (transformations, actions)  
-[ ] Optimización con catalyst y tungsten  
-[ ] Esquema de datos (parquet, avro, ORC) 
+[  ] ¿Qué es un cluster?  
+[  ] Spark: estructura y arquitectura  
+[  ] RDDs vs DataFrames  
+[  ] Jobs, stages, tasks  
+[  ] PySpark (transformations, actions)  
+[  ] Optimización con catalyst y tungsten  
+[  ] Esquema de datos (parquet, avro, ORC) 
   
 ### Proyectos  
 - [Pipline ETL en PySpark con archivos parquet]()  
