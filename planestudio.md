@@ -1,65 +1,37 @@
-# Plan de estudios para Data Enginerring  
+# Plan de estudios para Data Enginerring y Data Scientist
   
-## Módulo 1: Fundamentos de programación (Python)
-##### Duración 4 - 6 semanas
-  
-[ ] Sintaxis básica de python  
-[ ] Tipos de datos y estrucuras (listas, sets, diccionarios, tuplas)  
-[ ] Funciones y módulos  
-[ ] Manejo de errores  
-[ ] Lectura y escritura de archivos  
-[ ] Introducción a pandas  
-[ ] Uso de entornos virtuales (venv, pip)  
+## Fase 0: Fundamentos sólidos (Matemáticas y Programación)
+1. Matemáticas y estadística
+    - Algebra Lineal: vectores matrices, descomposición en valores singulares
+    - Cálculo: Derivadas parciales, gradientes
+    - Estadística y Probabilidad: Estadística descriptiva, inferencia, distribuciones, teorema de bayes y p-values
 
-### Proyectos  
-  
-- [Limpieza de un data set de ventas]()
-- [Análisis básico de un dataset de clientes]()
-- [Automatización para descargar y guardar datos diariamente]()
-- [Ordenador automático de archivos]()
-  
-## Módulo 2: SQL Avanzado + Modelado de Datos
-##### Duración 6 - 8 semanas
-  
-[ ] SELECT, JOIN, GROUPBY  
-[ ] Subqueries y CETs  
-[ ] Windows functions (muy importantes)
-[ ] Optimización de consultas  
-[ ] Normalización (1NF, 2NF, 3NF)  
-[ ] Diseño estrella y copo de nieve (kimball)  
+2. Programacion
+    - Python: tipos de datos, loops, funciones, clases, manejo de errores
+    - Librerias escenciales: Numpy, Pandas, Matplotlib/Seaborn
 
-### Proyectos
-- [Sistema de ventas con modelos estrella + consultas avanzadas]()
-- [Análsis de KPIs financieros con SQL avanzado]()
-- [Optimización de consultas en una base de datos de producción]()
-- [Data Mart para un negoció real con SQL + diseño lógico]()
-  
-## Módulo 3: Bases de datos SQL y NoSQL  
-##### Duración 3 - 4 semanas  
-  
-[ ] Bases relacionales PostgeSQL, MySQL  
-[ ] NoSQL MongoDB, Redis  
-[ ] Índices, particiones, replicación (conceptos), diferenteis entre OLTP vs OLAP  
-  
-### Proyectos  
-- [Sistema de gestión de inventario SQL - PostgreSQL]()
-- [Análisis de reviews de productos NoSQL - MongoDB]()
-- [Sistema de cacheo de sesiones NoSQL - Redis]()
-- [Modelos híbrido SQL + NoSQL PostgreSQL + MongoDB]()  
-  
-## Módulo 4: Procesamiento de datos: Spark, PySpark y Big Data 
-##### Duración 8 - 10 semanas  
-  
-[ ] ¿Qué es un cluster?  
-[ ] Spark: estructura y arquitectura  
-[ ] RDDs vs DataFrames  
-[ ] Jobs, stages, tasks  
-[ ] PySpark (transformations, actions)  
-[ ] Optimización con catalyst y tungsten  
-[ ] Esquema de datos (parquet, avro, ORC) 
-  
-### Proyectos  
-- [Pipline ETL en PySpark con archivos parquet]()  
-- [Análisis de grandes volúmenes usando PySpark + SQL]()
-- [Pipeline de enriquecimiento de datos en spark (joins de grandes datasets)]()
-- [Procesamiento distribuido de logs con pyspark + json]()
+3. Bases de datos
+    - SQL: Joins, subconsulta, windows function, índices, optimización de querys
+
+## Fase 1. Tronco común
+1. Limpieza y análisis exploratorio de datos
+    - Técnicas para manejar valores nulos, outliers y datos corruptos
+    - Uso avanzado de pandas y polars
+
+2. Visualización de datos
+    - Storytelling con datos
+
+3. Introducción al Machine Learning
+    - Algoritmos supervisados
+        * regresión lineal
+        * regresión logística
+        * clasificador bayesiano ingenuo
+        * árbol de decisión
+        * bosque aleatorio
+        * KNN
+        * Kmeans
+    - Algoritmos no supervisados
+        * Agrupamiento de clusteres
+        * Reglas de asociación
+        * Reducción de dimensiones
+    
