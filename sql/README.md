@@ -1,4 +1,4 @@
 # Documentación de SQL
 
-- [Introducción](introducción.md)
+- [Introducción](introducion.md)
 - [Consultas](consultas.md)
