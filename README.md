@@ -1,4 +1,22 @@
 # Documentación
-Este es una documentación de todos mis cursos que he hecho, tanto para volverme cientifico de datos, contiene python (numpy, pandas, tensorflow, scipy, etc...), spark, powerbi, tableu, etc..., como para cursos extra que he tomado.
+Documentación personal para estudiar y ser referencia, contiene sql, python (numpy, pandas, tensorflow, scipy, etc...), spark, powerbi, tableu, etc...
 
-- [Plan de estudio para Data Engineering](planestudio.md)
+### Git
+
+- [Conectar git con GitHub](./git/configuracion_git.md)
+- [Comandos comunes para operar con git](./git/configuracion/comandos.md)
+
+### SQL
+
+- [Introducción](./sql/introduccion.md)
+- [Consultas básicas](./sql/consultas.md)
+- [Joins]()
+- [Consultas intermedio]()
+
+### Python
+
+- [Comandos conda (miniconda)](./python/conda.md)
+- [Tuplas](./python/Tuplas/README.md)
+- [Diccionarios](./python/Diccionarios/README.md)
+- [Numpy](./python/numpy/README.md)
+- [Pandas](./python/pandas/README.md)
