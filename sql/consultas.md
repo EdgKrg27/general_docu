@@ -203,11 +203,13 @@ WHERE nombre LIKE 'AB_%' --empieza con "AB", seguido de al menos u carácter
 WHERE nombre LIKE '_a%' -- segunda letra es "a"
 ```
 
-Algunos comodines adicionales son los siguientes:
+Comodines adicionales son los siguientes:
 
 - `[abc]`: un carácter especifico de la lista - `'[JP]uan'`
 - `[a-z]`: rango de caracteres - '`[A-Z]%`'
 - `[^abc]`: cualquier carácter excepto los indicados - `'[^A]%'`
+
+Estos comodines dentro de MySQL se utilizan con otra cláusula llamada `REGEXP_LIKE(<column>, <pattern>)` o su versión pequeña que es `RLIKE` donde la sintaxis es igual a `LIKE`.
 
 **Ejemplo**
 
@@ -217,6 +219,24 @@ Se tienen toda las series que contengan 'The' en el titulo
 
 <p align="center">
   <img src="imagenes/clausula_like.png" width="auto">
+</p>
+
+Obtener todas los titulos de las series que tengan un número en su descripción
+
+```sql
+SELECT *
+FROM Series
+WHERE REGEXP_LIKE(descripcion, '[0-9]');
+
+o
+
+SELECT *
+FROM Series
+WHERE descripcion RLIKE '[0-9]';
+```
+
+<p align="center">
+  <img src="imagenes/rlike.png" width="auto">
 </p>
 
 ### Ejercicios 36 - 40
