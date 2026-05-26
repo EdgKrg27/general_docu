@@ -1,4 +1,4 @@
-# Consultas
+# SQL BÁSICO
 
 ## SELECT
 
