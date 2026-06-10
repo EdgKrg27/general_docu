@@ -71,7 +71,7 @@ donde:
 
 ## PARTITION BY
 
-Componente fundamental de las funciones de ventana (Window functions), la función principal es divirid o agrupar el conjuntto de datos en subgrupos o "ventanas" lógicas antes de que la función de ventanba realice su cálculo, es decir, `PARTITION BY` es el equivalente al `GROUP BY` pero para funciones de ventana. La gran diferencia es que, mientras `GROUP BY` colapsa tus filas y te devuelve una sola fila por cada grupo, `PARTITION BY` calcula el total, promedio o posición para cada grupo manteniendo intactas todas y cada una de las filas originales en el resultado.
+Componente fundamental de las funciones de ventana (Window functions), la función principal es dividir o agrupar el conjuntto de datos en subgrupos o "ventanas" lógicas antes de que la función de ventana realice su cálculo, es decir, `PARTITION BY` es el equivalente al `GROUP BY` pero para funciones de ventana. La gran diferencia es que, mientras `GROUP BY` colapsa tus filas y te devuelve una sola fila por cada grupo, `PARTITION BY` calcula el total, promedio o posición para cada grupo manteniendo intactas todas y cada una de las filas originales en el resultado.
 
 ¿Cómo funciona internamente?
 

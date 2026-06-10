@@ -20,6 +20,10 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 - [JOINS](./sql/joins.md)
 - [SQL intermedio](./sql/sql_intermedio.md)
 - [SQL avanzado](./sql/sql_avanzado.md)
+- [Usuarios y permisos](./sql/usuarios_permisos.md)
+- [DML, DLL, CRUD](./sql/dml_dll_crud.md)
+- [Programación en SQL](./sql/programacion_sql.md)
+- [Automatización](./sql/automatizacion.md)
 
 ### Python
 
