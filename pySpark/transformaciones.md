@@ -140,4 +140,4 @@ rdd_sorted = rdd.sortBy(lambda x: x)
 >> [1, 2, 3, 4]
 ``` 
 
-Ver ejercicios [link](./pySpark/02_transformaciones.ipynb)
+Ver ejercicios [link](02_transformaciones.ipynb)

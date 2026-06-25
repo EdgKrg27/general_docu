@@ -130,4 +130,4 @@ rdd_df.collect()
 >> [Row(id=1, nombre='Jose'), Row(id=2, nombre='Juan')]
 ```
 
-Ver ejercicios adjuntos [link](./pySpark/Introduccion_RDD.ipynb)
+Ver ejercicios adjuntos [link](01_introduccion.ipynb)
