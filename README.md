@@ -39,7 +39,7 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 ### Spark
 
 - [Introducción](./pySpark/introduccion.md)
-- [Transformaciones](./pySPark/transformaciones.md)
+- [Transformaciones](./pySpark/transformaciones.md)
 - [Acciones]()
 - [Avanzadas]
 
