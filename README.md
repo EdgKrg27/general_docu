@@ -40,8 +40,8 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 
 - [Introducción](./pySpark/introduccion.md)
 - [Transformaciones](./pySpark/transformaciones.md)
-- [Acciones]()
-- [Avanzadas]
+- [Acciones](./pySpark/acciones.md)
+- [Avanzadas](./pySpark/avanzado.md)
 
 ### WEB
 
