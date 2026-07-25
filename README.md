@@ -8,10 +8,10 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 
 ### Git
 
+
+
 - [Conectar git con GitHub](./git/configuracion_git.md)
-- [Comandos comunes para operar con git](./git/configuracion/comandos.md)
-- [Git Hub Copilot](./git/github-copilot.md)
-- [Casos de uso comunes](./git/casos_uso.md)
+- [Comandos comunes para operar con git](./git/comandos.md)
 
 ### SQL
 
