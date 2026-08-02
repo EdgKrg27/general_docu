@@ -193,5 +193,25 @@ Los beneficios principales son:
 Este es el proceso mediante el cual Spark redistribuye y reorganiza los datos a través de los diferentes nodos del clúster. Esto ocurre cuando una operación requiere agrupar o combinar registos que comparten una mismca clave, pero que actualmente están esparcidos en distintas particiones físicas.  
 Esta es la operación más costosa en términos de tiempo, memoria, red y disco en todos los ecosistemas de PySpark.
 
-## Porque ocurre el Shuffling???
+## Las 2 fases del Shuffling a nivel físico
+
+El shuffling divide el trabajo internamente en dos fases estrictas:
+
+`[Fase Shuffle Write (Origen)0] -> [Red / Transferencia] -> [Fase Shuffle Read (Destino)]`
+
+1. Suffle Write (Escritura)
+	- Los ejecutores de origen leen los datos de sus particiones locales
+	- Aplican una función hash sobre la clave para calcular a qué partición de destino debe ir cada registro
+	- Escriben los resultados intermedios en archivos temporales en el disco local del nodo
+2. Shuffle Read (Lectura)
+	- Los executores de dstino realizan peticiones de red para leer los archivos temporales desde los discos de todos los demás nodos de origen
+	- Los datos viajan por red
+	- El executor de destino combina y ordena los datos recibidos en memoria RAM para procesar la acción o transformación final
+
+Cuando un script de PySpark tarda demasiado tiempo, el 90% de las veces la cuasa es el Shuffle por estos 4 factores:
+
+- **I/O Disco:** Escribir y leer GB de archivos temproales de Shuffle en los discos de los servidores
+- **Sobrecarga de red:** El ancho de banda del clúster se stura enviando datos entre nodos
+- **Uso de memoria/Garbage Collection:** Si una clave tiene demasiados datos, puede saturar la RAM del executor de destino
+- **Deserialización:** Convertir objetos de Java/Python a bytes para enviarlos por la red y deserializar al recibir los datos consume mucha CPU
 
