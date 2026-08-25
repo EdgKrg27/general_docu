@@ -7,9 +7,6 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 - [Como generar un buen prompt](./gpt/creacion_prompt.md)
 
 ### Git
-
-
-
 - [Conectar git con GitHub](./git/configuracion_git.md)
 - [Comandos comunes para operar con git](./git/comandos.md)
 
@@ -24,6 +21,7 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 - [DML, DLL, CRUD](./sql/dml_dll_crud.md)
 - [Programación en SQL](./sql/programacion_sql.md)
 - [Automatización](./sql/automatizacion.md)
+- [Normalización](./sql/normalizacion.md)
 
 ### Python
 

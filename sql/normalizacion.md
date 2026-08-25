@@ -2,6 +2,13 @@
 
 La normalización es un proceso de diseño de bases de datos relacionales cuyo objetivo es organizar los dfatos para reducir redundancia y evitar inconsistencias, es decir, es mantener cada hecho en un solo lugar para evitar redundancia y anomalías al insertar, actualizar o eliminar datos.
 
+## Claves primarias y claves foraneas
+
+Las tablas se relacionan con otras tablas mediante una relación de clave primaria o de clave foránea, además se utilizan para definir relaciones de muchos a uno entre tablas.
+
+- **Claves primarias:** Es una columna o un conjunto de columnas en una tabla cuyos valores identifian de forma exclusiva una fila de la tabla. Una base de datos relacional está diseñada para imponer la exclusividad de las claves primarias permitiendo que haya sólo una fila con un valor de clave primaria específica en una tabla.
+- **Claves foraneas:** Una clave foránea es una columna o conjunto de columnas en una tabla cuyos valores corresponden a los valores de la clave primaria de otra tabla. Para poder añadir una fila con un valor de calve foránea específico, debe existir una fila en la tabla relacionada 
+
 ## Primer forma normal (1FN)
 
 La primer forma normal se cumple cuando:
@@ -39,63 +46,20 @@ Con esto la tabla incial se encuentra completamente en la primera forma normal.
 
 ## Segunda forma normal (2FN)
 
-La segunda forma normal se centra en eliminar las dependencias parciales. Una dependencia parcial se produce cuando un atributo no primo (columna que no forma parte de ninguna clave candidata) depende sólo de una parte de un clave compuesta en lugar de toda la clave, esto garantiza que cada dato asociado a la clave que realmente lo determina.
+La segunda forma normal se cumple cuando:
 
-Una tabla está en segunda forma normal (2NF) cuando:
-
-1. Ya cumple con la regla 1FN
-2. Cada columna que no forma parte de una clave candidata depende de la clave completa, no solamente de una parte de ella
+- Estan las tablas cumpliendo la 1FN
+- Todos los valores de las columnas deben depender únicamente de la llave primaria de la tabla
+- Las tablas deben tener una única llave primaria que identifique a la tabla y que sus atributos dependen de ella
 
 **Ejemplo:**
 
-Se tiene la tabla que cumple con 1FN
-
-|pedido_id|producto_id|nombre_producto|cantidad|
-|:--:|:--:|:--:|:--:|
-|1|10|Teclado|2|
-|1|20|Mouse|1|
-|1|10|Teclado|5|
-
-Aquí se tiene una clave compuesta: `(pedido_id, producto_id)` donde `cantidad` depende de pedido + producto, pero `nombre_producto` depende solamente de `producto_id`, esto es una dependencia parcial por lo cual no cumple con la regla 2NF.
-
-Para que la tabla cuente con la regla 2NF se debe separar la información del producto.
-
-|producto_id|nombre|
-|:--:|:--:|
-|10|Teclado|
-|20|Mouse|
-
-|pedido_id|producto_id|cantidad|
-|:--:|:--:|:--:|
-|1|10|2|
-|1|20|1|
-|2|10|5|
-
-ahora esto cumple la regla 2NF ya que `producto_id` -> `nombre` y `(pedido_id, producto_id)` -> `cantidad`, cada dato está asociado a la clave que realmente lo determina
-
 ## Tercera forma normal (3FN)
 
-Esta forma busca eliminar la dependencia transitiva, una columna que no pertenece a una clave candidata no debería depender de otra columna que tampoco pertenece a una clave candidata.  
-Una tabla está en 3NF cuando:
+La tercera forma normal se cumple cuando:
 
-1. Ya cumple 1FN
-2. Ya cumple 2FN
-3. Los atributos no clave dependen directamente de una clave candidata, no de otro atributo no clave
+- Estan las tablas cumpliendo con la 2FN
+- Los valores de las columnas de la tabla, no dependen de otras columnas que no sean la llave primaria
 
-Para poder realizar estos cambios es necesario comprender que son las dependencias transitivas.  
-Las dependencias transitivas se producen cuando un atributo no primario depende de otro atributo no primario, en lugar de depender directamente de la clave primaria. Esto puede generar redundancia e inconsistencias en la base de datos.  
-Por ejemplo:
-
-- A -> B (A determina B)
-- B -> C (B determina C)
-
-Esto significa que A determina indirectamente C a través de B, creando una dependencia transitiva.
-
-**Condiciones para que una tabla esté en 3FN**
-
-Una tabla está en 3FN si, para cada dependencia funcional no tricial X -> Y, se cumple al menos una de las siguientes condiciones.
-
-- **X es una clave primaria:** Esto significa que los atributos del lado izquierdo de la dependencia funcional (X) deben ser una clave primaria
-- **Y es un atributo principal:** Esto significa que cada elemento del conjunto de atributos Y debe ser parte de una clave candidata
-
+**Ejemplo**
 
