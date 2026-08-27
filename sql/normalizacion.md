@@ -49,10 +49,17 @@ Con esto la tabla incial se encuentra completamente en la primera forma normal.
 La segunda forma normal se cumple cuando:
 
 - Estan las tablas cumpliendo la 1FN
-- Todos los valores de las columnas deben depender únicamente de la llave primaria de la tabla
-- Las tablas deben tener una única llave primaria que identifique a la tabla y que sus atributos dependen de ella
+- Todos los valores de las columnas deben depender únicamente de la llave primaria de la tabla, es decir, que tengan relación
+- Las tablas deben tener una única llave primaria que identifique a la tabla y que sus atributos dependen de ella, es decir, dependencia funcional
 
 **Ejemplo:**
+
+Observando las tablas se puede ver que la tabla clientes, productos y barrios dependen solamente de la llave primaria, esto esta correcto, pero la tabla compra tiene dos llaves primariaspor lo que se debe dejar una sola, además se ve que las llaves primarias tienen relación entre si ya que relaciona los productos y los clientes que han hecho la compra.  
+Esto se soluciona creando una columna que identifica las compras de los clientes y los productos que han realizado, esto provoca que todas las tablas esten en la segunda forma normal.
+
+<p align="center">
+  <img src="./imagenes/2FN3FN.jpeg" width="auto">
+</p>
 
 ## Tercera forma normal (3FN)
 
@@ -63,3 +70,8 @@ La tercera forma normal se cumple cuando:
 
 **Ejemplo**
 
+Ahora podemos ver que las tablas también se encuentra en 3FN ya que cada tabla cumple conlas reglas de relaciones y que dependan solamente de la clave primaria.
+
+<p align="center">
+  <img src="./imagenes/2FN3FN.jpeg" width="auto">
+</p>
