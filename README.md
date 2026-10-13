@@ -26,11 +26,7 @@ Documentación personal para estudiar y ser referencia, contiene sql, python (nu
 ### Python
 
 - [Comandos conda (miniconda)](./python/conda.md)
-- [Tipos de datos](./python/tipos_datos.md)
-- [Tuplas](./python/Tuplas/README.md)
-- [Diccionarios](./python/Diccionarios/README.md)
-- [Numpy](./python/numpy/README.md)
-- [Pandas](./python/pandas/README.md)
+- [Conceptos basicos](./python/modulo_1/conceptos_basicos.ipynb)
 
 ### Snowflake
 
